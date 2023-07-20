@@ -1,7 +1,7 @@
 const axios = require('axios');
 const fs = require('fs').promises;
 const FormData = require('form-data');
-const SECRET_KEY = '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';
+const SECRET_KEY = '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';
 
 const main = async () =>  {
     console.log('run app...');
@@ -15,7 +15,7 @@ const main = async () =>  {
     console.log(summaryText);
 
 
-    console.log("\n==============\n   Notes:");
+    console.log("\n==============\n   Notes1:");
     const notesText = await getNotes(summaryText);
     console.log(notesText);
 
