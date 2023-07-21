@@ -6,7 +6,7 @@ const SECRET_KEY = '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';
 const main = async () =>  {
     console.log('run app...');
     console.log("\n==============\n   Transcription:");
-    const transcriptionText = await getTranscription('example01.mp3');
+    const transcriptionText = await getTranscription('BH_encounter.mp3');
     console.log(transcriptionText);
 
 
@@ -15,7 +15,7 @@ const main = async () =>  {
     console.log(summaryText);
 
 
-    console.log("\n==============\n   Notes1:");
+    console.log("\n==============\n   Notes:");
     const notesText = await getNotes(summaryText);
     console.log(notesText);
 
